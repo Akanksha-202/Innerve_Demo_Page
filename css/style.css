@@ -1,0 +1,173 @@
+body{
+    background-color: #0c1022;
+}
+
+.image_logo{
+    height:100px;
+    width:150px ;
+}
+
+.nav-item:hover{
+    position: relative;
+    bottom: 10px;
+    text-decoration: underline;
+
+}
+
+#about{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c1022;
+
+}
+
+.box{
+    position: relative;
+    width: 70%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#d400d4);
+    animation: animate 4s linear infinite;
+    animation-delay: -6s;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 950px;
+    height: 500px;
+    background-image: conic-gradient(transparent,transparent,transparent,#00ccff);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    inset: 5px;
+    border-radius: 16px;
+    background: #0c1022;
+    z-index: 1;
+    
+}
+
+.box h1, h3{
+    position: relative;
+    z-index: 2;
+    color: #0fff;
+    font-size: 5rem; 
+}
+.box h3{
+    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+}
+
+@media (max-width:631px) {
+    
+    .box h1,h3{
+    position: relative;
+    z-index: 2;
+    color: #0fff;
+    font-size: 4rem;
+    }
+
+    .box h3{
+    font-size: 1.5rem;
+    font-family: 'Pacifico', cursive;
+    }
+}
+
+.para{
+    margin-top: 2%;
+    padding: 0.5% 10% 2%;
+    font-family:'Pacifico', cursive; 
+    color: #A5C9CA;
+    font-size: larger;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+
+.carousel-item{
+    padding:10% 15%;
+    padding-bottom: 5%;
+    
+}
+
+#footer{
+    background-color: #fff;
+    padding: 3% 10%;
+    text-align: center;
+}
+
+.social-buttons{
+    margin:1.5%;
+    color:#0c1022 ;
+}
+.social-buttons:hover{
+    font-size: 2rem;
+}
+
+.bottom:hover{
+    text-decoration:underline;
+}
+
+.card{
+    margin: 7% 15%;
+}
+
+.card h3{
+    color: #94B49F;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+
+}
+
+.card:hover{
+
+    border: dashed;
+}
+
+.heading2{
+    text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 9rem;
+    color: #18978F;
+}
+
+@media (max-width:538px) {
+    
+    .heading2{
+        font-size: 8.25rem;
+    }
+}
+
+#accordion{
+    background-color: #0c1022;
+    margin: 7% 15%;
+}
